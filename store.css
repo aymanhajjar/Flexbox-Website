@@ -1,0 +1,389 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.background {
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0px;
+}
+
+.maintext {
+    position: absolute;
+    left: 15%;
+    top: 30%;
+}
+
+.title {
+    font-size: 80px;
+    color: rgb(203, 73, 3);
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.intro {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 80vh;
+}
+.tip {
+    color: rgb(225, 225, 225);
+    font-size: 30px;
+}
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    background-color: rgba(14, 14, 14, 0.5);
+    height: 10%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbutton {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbutton::after{
+    content: '';
+    width: 2%;
+    height: 4px;
+    position: absolute;
+    background-color: #ffffff;
+    display: block;
+}
+
+.navbutton:hover {
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.searchbar {
+    width: 20%;
+    background-color: rgb(174, 174, 174);
+    border: none;
+    border-radius: 5px;
+    height: 30%;
+    transition: all 0.5s;
+    padding: 0px 10px;
+}
+
+.searchbar:focus {
+    outline: none;
+    background-color: gray;
+    transition: all 0.5s;
+    color: white;
+}
+
+.signinbutton {
+    padding: 6px 18px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.signinbutton:hover {
+    background-color: rgb(180, 0, 0);
+    transition: all 0.3s;
+}
+
+.content {
+    background-color: rgb(28, 28, 28);
+    padding: 40px;
+}
+
+.category {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.item {
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    padding: 20px;
+    height: 25rem;
+    margin: 2%;
+    text-align: center;
+    transition: all 0.3s;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 5px 10px 10px rgb(82, 82, 82);
+}
+
+.item:hover {
+    cursor: pointer;
+    width: 26%;
+    height: 28rem;
+    transition: all 0.3s;
+}
+
+.itemimage {
+    object-fit: contain;
+    max-width: 80%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.addtocart {
+    border: none;
+    background-color: red;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.addtocart:hover {
+    background-color: rgb(210, 1, 1);
+    transition: all 0.3s;
+}
+
+.section {
+    display: flex;
+    margin: 0px 5%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1150px) {
+    .item {
+        background-color: rgb(255, 255, 255);
+        width: 25%;
+        padding: 20px;
+        height: 20rem;
+        margin: 1%;
+        text-align: center;
+        transition: all 0.3s;
+        border-radius: 5px;
+        position: relative;
+        box-shadow: 5px 10px 10px rgb(82, 82, 82);
+    }
+    .navbar {
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+    }
+  }
+
+@media only screen and (max-width: 900px) {
+    .item {
+            background-color: rgb(255, 255, 255);
+            width: 22%;
+            padding: 20px;
+            height: 16rem;
+            margin: 1%;
+            text-align: center;
+            transition: all 0.3s;
+            border-radius: 5px;
+            position: relative;
+            box-shadow: 5px 10px 10px rgb(82, 82, 82);
+        }
+
+    .item:hover {
+        height: 16rem;
+        width: 22%;
+    }
+
+    .addtocart {
+        border: none;
+        background-color: red;
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+        padding: 10px;
+        font-size: 10px;
+        border-radius: 5px;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .label {
+        font-size: 15px;
+    }
+
+    .section {
+        margin: 0 2%;
+    }
+    .navbar {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header {
+        justify-content: center;
+    }
+    .searchbar {
+        margin-right: 10%;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .item {
+            background-color: rgb(255, 255, 255);
+            width: 34%;
+            padding: 20px;
+            height: 12rem;
+            margin: 2%;
+            text-align: center;
+            transition: all 0.3s;
+            border-radius: 5px;
+            position: relative;
+            box-shadow: 5px 10px 10px rgb(82, 82, 82);
+        }
+
+    .item:hover {
+        height: 12rem;
+        width: 34%;
+    }
+
+    .addtocart {
+        border: none;
+        background-color: red;
+        position: absolute;
+        right: 2%;
+        bottom: 2%;
+        padding: 4px;
+        font-size: 10px;
+        border-radius: 5px;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .label {
+        font-size: 15px;
+    }
+    .section {
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .content {
+        padding: 20px;
+    }
+    .header {
+        justify-content: center;
+    }
+    .searchbar {
+        margin-right: 5%;
+        width: 50%;
+        height: 40%;
+    }
+    .navbar {
+        width: 95%;
+        margin-bottom: 5%;
+    }
+    .header {
+        height: 12%;
+        padding: 20px;
+    }
+    .signinbutton {
+        font-size: 12px;
+        padding: 5px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .item {
+            background-color: rgb(255, 255, 255);
+            width: 80%;
+            padding: 20px;
+            height: 12rem;
+            margin: 2%;
+            text-align: center;
+            transition: all 0.3s;
+            border-radius: 5px;
+            position: relative;
+            box-shadow: 5px 10px 10px rgb(82, 82, 82);
+        }
+
+    .item:hover {
+        height: 12rem;
+        width: 80%;
+    }
+
+    .addtocart {
+        border: none;
+        background-color: red;
+        position: absolute;
+        right: 2%;
+        bottom: 2%;
+        padding: 4px;
+        font-size: 10px;
+        border-radius: 5px;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .label {
+        font-size: 15px;
+    }
+    .section {
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .content {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+.maintext {
+    top: 20%;
+}
+}

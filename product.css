@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(109, 109, 109);
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    background-color: rgba(14, 14, 14, 0.5);
+    height: 10%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbutton {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbutton::after{
+    content: '';
+    width: 2%;
+    height: 4px;
+    position: absolute;
+    background-color: #ffffff;
+    display: block;
+}
+
+.navbutton:hover {
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.searchbar {
+    width: 20%;
+    background-color: rgb(174, 174, 174);
+    border: none;
+    border-radius: 5px;
+    height: 30%;
+    transition: all 0.5s;
+    padding: 0px 10px;
+}
+
+.searchbar:focus {
+    outline: none;
+    background-color: gray;
+    transition: all 0.5s;
+    color: white;
+}
+
+.signinbutton {
+    padding: 6px 18px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.signinbutton:hover {
+    background-color: rgb(180, 0, 0);
+    transition: all 0.3s;
+}
+
+.content {
+    width: 80%;
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.info {
+    width: 50%;
+}
+
+.productimage {
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgb(58, 58, 58);
+    width: 35%;
+    object-fit: contain;
+}
+
+.productname {
+    font-size: 40px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: whitesmoke;
+}
+
+.price {
+    margin-top: 20px;
+    font-size: 30px;
+    color: rgb(254, 139, 139);
+}
+
+@media only screen and (max-width: 1150px) {
+    .navbar {
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .content {
+        padding-top: 20%;
+    }
+  }
+
+@media only screen and (max-width: 900px) {
+    .navbar {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header {
+        justify-content: center;
+    }
+    .searchbar {
+        margin-right: 10%;
+        width: 40%;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .header {
+        justify-content: center;
+    }
+    .searchbar {
+        margin-right: 5%;
+        width: 50%;
+        height: 40%;
+    }
+    .navbar {
+        width: 95%;
+        margin-bottom: 5%;
+    }
+    .header {
+        height: 12%;
+        padding: 20px;
+    }
+    .signinbutton {
+        font-size: 12px;
+        padding: 5px;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (max-width: 380px) {
+}
